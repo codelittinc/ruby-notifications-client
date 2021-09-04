@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - openresty/1.15.8.2
       Date:
-      - Sat, 04 Sep 2021 14:49:10 GMT
+      - Sat, 04 Sep 2021 19:07:05 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -50,15 +50,15 @@ http_interactions:
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Etag:
-      - W/"481ddfd4ae089f89aa2e301a8933e8b1"
+      - W/"e607ed6c2ca5371cb46bff5858fb9266"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7a178c114aafc21222b5cb4d4260a623
+      - '049af121e9f17627b42fc2bea1d04d12'
       X-Runtime:
-      - '0.321468'
+      - '0.302750'
     body:
       encoding: ASCII-8BIT
-      string: '{"ok":true,"channel":"DSKK0U6EP","ts":"1630766950.000700","message":{"bot_id":"BSW6NEU5N","type":"message","text":"123","user":"USYCS7QHL","ts":"1630766950.000700","team":"T029Q9LHJ","bot_profile":{"id":"BSW6NEU5N","deleted":false,"name":"RoadRunner","updated":1579627251,"app_id":"ASVNL9492","icons":{"image_36":"https://avatars.slack-edge.com/2020-01-20/901740758338_7de919de0c79c2b1b800_36.jpg","image_48":"https://avatars.slack-edge.com/2020-01-20/901740758338_7de919de0c79c2b1b800_48.jpg","image_72":"https://avatars.slack-edge.com/2020-01-20/901740758338_7de919de0c79c2b1b800_72.jpg"},"team_id":"T029Q9LHJ"}}}'
-  recorded_at: Sat, 04 Sep 2021 14:49:10 GMT
+      string: '{"notification_id":"8172"}'
+  recorded_at: Sat, 04 Sep 2021 19:07:05 GMT
 recorded_with: VCR 6.0.0

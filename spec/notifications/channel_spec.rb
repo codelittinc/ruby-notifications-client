@@ -7,7 +7,7 @@ RSpec.describe Notifications::Channel do
     it "sends a message" do
       VCR.use_cassette("channel#send") do
         response = Notifications::Channel.new.send("123", "feed-test-automations")
-        expect(response["ts"]).to eql("1630766885.002600")
+        expect(response["notification_id"]).to eql("8152")
       end
     end
   end
