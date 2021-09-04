@@ -1,0 +1,108 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.roadrunner.codelitt.dev/channel_messages
+    body:
+      encoding: UTF-8
+      string: '{"bot":null,"message":"123","channel":"123","ts":"123","uniq":false}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Authorization:
+      - "<AUTHENTICATION_KEY>"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - openresty/1.15.8.2
+      Date:
+      - Sat, 04 Sep 2021 13:45:44 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '34'
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Request-Id:
+      - 597e97ca268489afac3d32fd4ee44f16
+      X-Runtime:
+      - '0.003677'
+      Vary:
+      - Origin
+    body:
+      encoding: UTF-8
+      string: '{"status":404,"error":"Not Found"}'
+  recorded_at: Sat, 04 Sep 2021 13:45:44 GMT
+- request:
+    method: post
+    uri: https://api.notifications.codelitt.dev/channel_messages
+    body:
+      encoding: UTF-8
+      string: '{"message":"123","channel":"feed-test-automations","ts":null,"uniq":false}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Authorization:
+      - "<AUTHENTICATION_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.15.8.2
+      Date:
+      - Sat, 04 Sep 2021 14:48:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"3a66649007e9691f823e886a9206d508"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b9e517c9e6cebb3ec4505d9c45dc9f28
+      X-Runtime:
+      - '0.317371'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ok":true,"channel":"CRXH3U8PK","ts":"1630766885.002600","message":{"bot_id":"BSW6NEU5N","type":"message","text":"123","user":"USYCS7QHL","ts":"1630766885.002600","team":"T029Q9LHJ","bot_profile":{"id":"BSW6NEU5N","deleted":false,"name":"RoadRunner","updated":1579627251,"app_id":"ASVNL9492","icons":{"image_36":"https://avatars.slack-edge.com/2020-01-20/901740758338_7de919de0c79c2b1b800_36.jpg","image_48":"https://avatars.slack-edge.com/2020-01-20/901740758338_7de919de0c79c2b1b800_48.jpg","image_72":"https://avatars.slack-edge.com/2020-01-20/901740758338_7de919de0c79c2b1b800_72.jpg"},"team_id":"T029Q9LHJ"}}}'
+  recorded_at: Sat, 04 Sep 2021 14:48:05 GMT
+recorded_with: VCR 6.0.0
