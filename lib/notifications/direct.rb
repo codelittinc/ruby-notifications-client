@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require "notifications/notification"
+require "notifications/slack_client"
 
 module Notifications
-  class Direct < Notification
+  class Direct < SlackClient
     def send(message, username, uniq = false)
       return if !username || username.size < 3
 
