@@ -4,7 +4,7 @@ require "dotenv/load"
 require "notifications/request"
 
 module Notifications
-  class SlackClient
+  class NotificationsClient
     def initialize(api_key = nil)
       @key = api_key || ENV.fetch("NOTIFICATIONS_API_KEY", nil)
       @url = "https://api.notifications.codelitt.dev"

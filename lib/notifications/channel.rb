@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require "notifications/slack_client"
+require "notifications/notifications_client"
 
 module Notifications
-  class Channel < SlackClient
+  class Channel < NotificationsClient
     def send(message, channel, notification_id = nil, uniq = false)
       request("/channel_messages", {
                 message:,

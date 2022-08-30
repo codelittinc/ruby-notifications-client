@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require "notifications/slack_client"
+require "notifications/notifications_client"
 
 module Notifications
-  class Reactji < SlackClient
+  class Reactji < NotificationsClient
     def send(reaction, channel, notification_id)
       request("/reactions", {
                 reaction:,
