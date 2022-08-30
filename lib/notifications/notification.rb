@@ -6,12 +6,8 @@ require "notifications/request"
 module Notifications
   class Notification
     def initialize(api_key = nil)
-      @key = api_key || ENV["NOTIFICATIONS_API_KEY"]
+      @key = api_key || ENV.fetch("NOTIFICATIONS_API_KEY", nil)
       @url = "https://api.notifications.codelitt.dev"
-    end
-
-    def build_params(params)
-      {}.merge(params)
     end
 
     def authorization
@@ -20,6 +16,12 @@ module Notifications
 
     def build_url(path)
       "#{@url}#{path}"
+    end
+
+    def request(path, body)
+      url = build_url(path)
+      response = Request.post(url, authorization, body)
+      JSON.parse(response.body) if response&.body
     end
   end
 end

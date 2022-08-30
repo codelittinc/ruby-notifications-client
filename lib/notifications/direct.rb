@@ -5,13 +5,13 @@ require "notifications/notification"
 module Notifications
   class Direct < Notification
     def send(message, username, uniq = false)
-      url = build_url("/direct_messages")
-      response = Request.post(url, authorization, build_params({
-                                                                 message: message,
-                                                                 username: username,
-                                                                 uniq: uniq
-                                                               }))
-      JSON.parse(response.body)
+      return if !username || username.size < 3
+
+      request("/direct_messages", {
+                message:,
+                username:,
+                uniq:
+              })
     end
   end
 end
