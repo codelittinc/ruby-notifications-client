@@ -10,18 +10,18 @@
 # Configuration parameters: AllowedConstants.
 Style/Documentation:
   Exclude:
-    - 'spec/**/*'
-    - 'test/**/*'
-    - 'lib/notifications/channel.rb'
-    - 'lib/notifications/direct.rb'
-    - 'lib/notifications/notifications_client.rb'
-    - 'lib/notifications/reactji.rb'
-    - 'lib/notifications/request.rb'
+    - "spec/**/*"
+    - "test/**/*"
+    - "lib/ruby_notifications_client/channel.rb"
+    - "lib/ruby_notifications_client/direct.rb"
+    - "lib/ruby_notifications_client/notifications_client.rb"
+    - "lib/ruby_notifications_client/reactji.rb"
+    - "lib/ruby_notifications_client/request.rb"
 
 # Offense count: 2
 # Configuration parameters: AllowedMethods.
 # AllowedMethods: respond_to_missing?
 Style/OptionalBooleanParameter:
   Exclude:
-    - 'lib/notifications/channel.rb'
-    - 'lib/notifications/direct.rb'
+    - "lib/ruby_notifications_client/channel.rb"
+    - "lib/ruby_notifications_client/direct.rb"

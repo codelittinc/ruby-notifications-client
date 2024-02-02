@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
-require "notifications/direct"
+require "ruby_notifications_client/direct"
 
-RSpec.describe Notifications::Direct do
+RSpec.describe RubyNotificationsClient::Direct do
   context "#send" do
     it "sends a message" do
       VCR.use_cassette("direct#send") do
-        response = Notifications::Direct.new.send("123", "kaiomagalhaes")
+        response = RubyNotificationsClient::Direct.new.send("123", "kaiomagalhaes")
         expect(response["notification_id"]).to eql("8172")
       end
     end

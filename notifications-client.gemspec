@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative "lib/notifications/version"
+require_relative "lib/ruby_notifications_client/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "ruby-notifications-client"
-  spec.version       = Notifications::Client::VERSION
+  spec.version       = RubyNotificationsClient::Client::VERSION
   spec.authors       = ["kaiomagalhaes"]
   spec.email         = ["me@kaiomagalhaes.com"]
 

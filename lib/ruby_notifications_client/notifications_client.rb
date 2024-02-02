@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require "dotenv/load"
-require "notifications/request"
+require "ruby_notifications_client/request"
 
-module Notifications
+module RubyNotificationsClient
   class NotificationsClient
     def initialize(api_key = nil)
       @key = api_key || ENV.fetch("NOTIFICATIONS_API_KEY", nil)

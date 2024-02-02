@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require "notifications/notifications_client"
+require "ruby_notifications_client/notifications_client"
 
-module Notifications
+module RubyNotificationsClient
   class Direct < NotificationsClient
     def send(message, username, uniq = false)
       return if !username || username.size < 3
