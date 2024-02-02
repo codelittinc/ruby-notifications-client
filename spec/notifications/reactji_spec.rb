@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "ruby_notifications_client/reactji"
+require "ruby_notifications_client"
 
 RSpec.describe RubyNotificationsClient::Reactji do
   context "#send" do

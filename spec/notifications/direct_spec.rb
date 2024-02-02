@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "ruby_notifications_client/direct"
+require "ruby_notifications_client"
 
 RSpec.describe RubyNotificationsClient::Direct do
   context "#send" do

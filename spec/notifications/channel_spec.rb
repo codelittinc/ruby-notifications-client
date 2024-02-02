@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "ruby_notifications_client/channel"
+require "ruby_notifications_client"
 
 RSpec.describe RubyNotificationsClient::Channel do
   context "#send" do
