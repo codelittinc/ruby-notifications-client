@@ -4,6 +4,10 @@ require "notifications/notifications_client"
 
 module Notifications
   class Channel < NotificationsClient
+    def list
+      Request.get("#{@url}/api/channels", authorization)
+    end
+
     def send(message, channel, notification_id = nil, uniq = false)
       request("/channel_messages", {
                 message:,
