@@ -2,15 +2,15 @@ name: Build and Publish Ruby Gem on Tag Pushes
 on:
   push:
     tags:
-      - '*.*.*'
+      - "*.*.*"
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: Build and Publish Ruby Gem on Tag Pushes
-      uses: bodyshopbidsdotcom/gh-action-publish-gem-on-tag@<latest_release_version>
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        owner: bodyshopbidsdotcom
+      - uses: actions/checkout@v1
+      - name: Build and Publish Ruby Gem on Tag Pushes
+        uses: bodyshopbidsdotcom/gh-action-publish-gem-on-tag@1.0.3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          owner: codelittinc
